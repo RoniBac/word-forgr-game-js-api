@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArmaPalabras</title>
+
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+
+  <header>🧠 ArmaPalabras</header>
+
+  <!-- Stats -->
+  <div class="stats">
+    <div>Puntos: <span id="points">0</span></div>
+    <div>Espacios: <span id="slots">3</span></div>
+  </div>
+
+  <!-- Zona para formar palabra -->
+  <div class="word-area">
+    <div class="slot">_</div>
+    <div class="slot">_</div>
+    <div class="slot">_</div>
+  </div>
+
+  <!-- Acciones -->
+  <div class="actions">
+    <button>Validar palabra</button>
+    <button id="validate-btn">Validar palabra</button>
+  </div>
+
+  <!-- Inventario -->
+  <div class="inventory">
+    <h3>Letras disponibles</h3>
+    <div class="letters">
+      <div class="letter">A</div>
+      <div class="letter">S</div>
+      <div class="letter">C</div>
+    </div>
+  </div>
+
+  <!-- Tienda -->
+ <div class="shop-items">
+  <div class="shop-item" data-type="letter" data-value="A" data-price="10">
+    Comprar letra A (10 pts)
+  </div>
+  <div class="shop-item" data-type="letter" data-value="E" data-price="10">
+    Comprar letra E (10 pts)
+  </div>
+  <div class="shop-item" data-type="slot" data-price="100">
+    Comprar espacio (100 pts)
+  </div>
+</div>
+  </div>
+  <script type="module" src="Src/game.js"></script>
+</body>
+</html>
