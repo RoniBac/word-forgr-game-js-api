@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArmaPalabras</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>🧠 ArmaPalabras</header>
+
+<div class="stats">
+  <div>Puntos: <span id="points">0</span></div>
+  <div>Espacios: <span id="slots">4</span></div>
+</div>
+
+<div class="word-area"></div>
+
+<div class="actions">
+  <button id="validate-btn">Validar palabra</button>
+  <button id="clear-btn">Limpiar</button>
+</div>
+
+<div class="inventory">
+  <h3>Letras disponibles</h3>
+  <div class="letters"></div>
+</div>
+<section class="history">
+  <h3>Used Words</h3>
+  <ul id="history-list"></ul>
+</section>
+
+<section class="shop">
+  <h2>Tienda</h2>
+
+  <h3>Comprar letras</h3>
+  <div class="shop-letters"></div>
+
+  <h3>Comprar espacios</h3>
+  <div class="shop-slots"></div>
+</section>
+
+<script type="module" src="Src/game.js"></script>
+<script type="module">
+  import { initGame } from "./Src/game.js";
+  initGame();
+</script>
+</body>
+</html>
